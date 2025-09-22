@@ -1,4 +1,20 @@
 /* ====== Header Spacing ====== */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  
+}
+
+/* Fix search bar overflowing on small screens */
+.search-container {
+  max-width: 100%;   /* instead of fixed 450px */
+  width: 100%;
+}
+
+/* Fix typo in block1 btns image */
+.block1 .btns img {
+  width: 180px;   /* correct value */
+}
 .header {
   margin-top: 10px;
   margin-bottom: 10px;
