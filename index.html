@@ -1,0 +1,1931 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div Class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"><img src="images/logo.svg">
+          <button class="menu-btn" id="menuBtn">
+            <!-- Hamburger Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+          </button>
+
+          <!-- Sidebar -->
+          <div class="sidebar" id="sidebar">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <h2>Menu</h2>
+            <ul>
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="search-container">
+            <!-- Dropdown/List -->
+            <select class="category">
+              <option>All Catagories</option>
+              <option>Drinks</option>
+              <option>Chocolotoes</option>
+              <option>Grocries</option>
+            </select>
+
+            <!-- Search Input -->
+            <input type="text" class="search-input" placeholder="Search if More then 20,000">
+
+            <!-- Icon -->
+            <div class="search-icon">🔍</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="menu">
+            <!-- First Link -->
+            <a href="#">HOME</a>
+
+            <!-- Second Link with dropdown -->
+            <div>
+              <a href="#" class="dropdown-toggle" tabindex="0">PAGES </a>
+              <ul class="dropdown">
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">SINGLE PRODUCTS</a></li>
+                <li><a href="#">CART</a></li>
+                <li><a href="#">CHECKOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">SINGLE POST</a></li>
+                <li><a href="#">STYLES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">THANK YOU</a></li>
+                <li><a href="#">MY ACCOUT</a></li>
+                <li><a href="#">404 ERROR</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+            </svg>&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M400-400h160v-80H400v80Zm0-120h320v-80H400v80Zm0-120h320v-80H400v80Zm-80 400q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
+            </svg>&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+              <path
+                d="M172-488q25-87 101.5-184.5T480-880q130 110 206.5 207.5T788-488h-84q-23-62-79-133.5T480-774q-88 81-144.5 152.5T256-488h-84Zm622 146q-9 49-31.5 92.5T705-171q-35 35-78.5 57T535-84l259-258Zm-163-66h114L421-84q-23-5-44.5-11.5T335-113l296-295Zm-229 0h114L267-159q-15-14-28.5-29T214-220l188-188Zm-243 0h127L176-298q-8-27-12-54.5t-5-55.5Zm321-80Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container-fluid">
+      <div id="text">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <h1><span style="color: #6BB252;">Trendy</span> Fashion</h1>
+            <h1>at your</h1>
+            <h1 style="font-weight: bold; font-size: 72px;">Doorsteps</h1>
+            <p>“Discover fashion that fits your lifestyle, anytime, anywhere.”</p>
+            <a href="">START SHOPPING</a>
+            <button href="">JOIN US</button>
+            <div id="h3-boxs">
+              <h5><span style="font-size: 32px; font-weight: bold;">14K+</span><br>Product <br>Variets</h5>
+              <h5><span style="font-size: 32px; font-weight: bold;">50K+</span><br> Happy<br> Customer</h5>
+              <h5><span style="font-size: 32px; font-weight: bold;">10K+</span><br> Store <br>Location</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box" style="background:#6BB252;">
+          <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="white">
+              <path
+                d="M204-318q-22-38-33-78t-11-82q0-134 93-228t227-94h7l-64-64 56-56 160 160-160 160-56-56 64-64h-7q-100 0-170 70.5T240-478q0 26 6 51t18 49l-60 60ZM481-40 321-200l160-160 56 56-64 64h7q100 0 170-70.5T720-482q0-26-6-51t-18-49l60-60q22 38 33 78t11 82q0 134-93 228t-227 94h-7l64 64-56 56Z" />
+            </svg>
+          </div>
+          <div class="right">
+            <h5>Fresh from farm</h5>
+            <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+          </div>
+        </div>
+
+        <div class="box" style="background:#364127;">
+          <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="white">
+              <path
+                d="M440-120v-319q-64 0-123-24.5T213-533q-45-45-69-104t-24-123v-80h80q63 0 122 24.5T426-746q31 31 51.5 68t31.5 79q5-7 11-13.5t13-13.5q45-45 104-69.5T760-720h80v80q0 64-24.5 123T746-413q-45 45-103.5 69T520-320v200h-80Zm0-400q0-48-18.5-91.5T369-689q-34-34-77.5-52.5T200-760q0 48 18 92t52 78q34 34 78 52t92 18Zm80 120q48 0 91.5-18t77.5-52q34-34 52.5-78t18.5-92q-48 0-92 18.5T590-569q-34 34-52 77.5T520-400Z" />
+            </svg>
+          </div>
+          <div class="right">
+            <h5>Fresh from farm</h5>
+            <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+          </div>
+        </div>
+
+        <div class="box" style="background:#F95F09;">
+          <div class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="white">
+              <path
+                d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z" />
+            </svg>
+          </div>
+          <div class="right">
+            <h5>Fresh from farm</h5>
+            <p style="color: aliceblue;">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="left">
+            <h2>WATCHES</h2>
+          </div>
+          <div class="right">
+            <button>Views All</button>
+
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+              </svg>
+            </div>
+
+            <div class="box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="image-slider" id="imageSlider">
+            <img src="images/watches/1.jpg">
+            <img src="images/watches/2.jpg">
+            <img src="images/watches/3.jpg">
+            <img src="images/watches/4.jpg">
+            <img src="images/watches/6.jpg">
+            <img src="images/watches/7.jpg">
+            <img src="images/watches/8.jpg">
+            <img src="images/watches/9.jpg">
+            <img src="images/watches/10.jpg">
+            <img src="images/watches/11.jpg">
+            <img src="images/watches/12.jpg">
+            <img src="images/watches/13.jpg">
+            <img src="images/watches/14.jpg">
+            <img src="images/watches/15.jpg">
+            <img src="images/watches/16.jpg">
+            <img src="images/watches/17.jpg">
+            <img src="images/watches/18.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="left">
+            <h2>Men Shirts</h2>
+          </div>
+          <div class="right">
+            <button>Views All</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="card-container">
+
+            <!-- Card 1 -->
+
+            <div class="card">
+              <img src="images/shirts/1.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/2.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/3.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/4.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/5.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/6.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/7.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/8.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/9.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+            <div class="card">
+              <img src="images/shirts/10.jpg" alt="Bread">
+              <p>Whole Wheat Sandwich Bread</p>
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400" viewBox="0 -960 960 960">
+                  <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                </svg>
+                <span>(222)</span>
+              </div>
+              <p class="price">
+                <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+              </p>
+              <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="white">
+                  <path
+                    d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                </svg>&nbsp;&nbsp;
+                Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <div class="container my-5">
+      <div class="row g-3">
+        <div class="col-md-7">
+          <div class="offer-box" style="background-image: url('images/box1.jpg');">
+            <div class="offer-content">
+              <h2>Items on SALE</h2>
+              <p>Discounts up to 30%</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 d-flex flex-column gap-1">
+          <div class="offer-box" style="background-image: url('images/box2.jpg'); height:245px;">
+            <div class="offer-content">
+              <h2>Combo offers</h2>
+              <p>Discounts up to 50%</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+          <div class="offer-box" style="background-image: url('images/box3.jpg'); height:245px;">
+            <div class="offer-content">
+              <h2>Discount Coupons</h2>
+              <p>Discounts up to 40%</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="left">
+            <h2>Choice You</h2>
+          </div>
+          <div class="right">
+            <button>Views All</button>
+
+            <!-- Prev Button -->
+            <div class="box prev-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+              </svg>
+            </div>
+
+            <!-- Next Button -->
+            <div class="box next-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards Slider -->
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="cards-wrapper" style="overflow:hidden;">
+            <div class="cards-track" style="display:flex; gap:20px; transition: transform 0.5s ease;">
+              <div class="card">
+                <img src="images/watches/1.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/2.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/3.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/4.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/5.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/6.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/7.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/8.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/watches/9.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="bg-image">
+          <div class="overlay">
+            <div class="col-6">
+              <h1>Get 25% Discount <br>
+                on your First<br>
+                Purchase
+              </h1>
+              <p>Just Sign Up & Register it now to become member.</p>
+            </div>
+            <div class="col-6">
+              <form action="#" method="POST">
+                <div class="form-group">
+
+                  <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <button>Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="left">
+            <h2>Man Snakers</h2>
+          </div>
+          <div class="right">
+            <button>Views All</button>
+            <div class="box prev-btns">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+              </svg>
+            </div>
+            <div class="box next-btns">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="cards-wrapper" style="overflow:hidden;">
+            <div class="cards-tracks" style="display:flex; gap:20px; transition: transform 0.5s ease;">
+              <div class="card">
+                <img src="images/manshoes/1.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/2.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/3.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/4.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/5.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/6.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/7.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/8.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/manshoes/9.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="left">
+            <h2>Pents</h2>
+          </div>
+          <div class="right">
+            <button>Views All</button>
+            <div class="box prev-btns-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+              </svg>
+            </div>
+
+            <div class="box next-btns-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="cards-wrapper" style="overflow:hidden;">
+            <div class="cards-tracks-3" style="display:flex; gap:20px; transition: transform 0.5s ease;">
+              <div class="card">
+                <img src="images/Pents/1.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/2.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/3.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/4.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/5.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/6.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/7.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/8.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+              <div class="card">
+                <img src="images/Pents/9.jpg" alt="Bread">
+                <p>Whole Wheat Sandwich Bread</p>
+                <div class="stars">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" fill="#FFD400"
+                    viewBox="0 -960 960 960">
+                    <path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143Z" />
+                  </svg>
+                  <span>(222)</span>
+                </div>
+                <p class="price">
+                  <del>$24.00</del> <span class="discount">$18.00</span> <span class="offer">10% OFF</span>
+                </p>
+                <button class="cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="white">
+                    <path
+                      d="M360-640v-80h240v80H360ZM280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM40-800v-80h131l170 360h280l156-280h91L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68.5-39t-1.5-79l54-98-144-304H40Z" />
+                  </svg>&nbsp;&nbsp;
+                  Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 gallery-row">
+        <div class="card1">
+          <img src="images/gallery1.jpg" alt="image">
+          <p>22 Aug 2021 | tips & tricks</p>
+          <h1>Top 10 casual look ideas to dress up your kids</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam...
+          </p>
+        </div>
+        <div class="card1">
+          <img src="images/gallery2.jpg" alt="image">
+          <p>22 Aug 2021 | tips & tricks</p>
+          <h1>Top 10 casual look ideas to dress up your kids</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam...
+          </p>
+        </div>
+        <div class="card1">
+          <img src="images/gallery3.jpg" alt="image">
+          <p>22 Aug 2021 | tips & tricks</p>
+          <h1>Top 10 casual look ideas to dress up your kids</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="display">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 banner-row">
+          <div class="row">
+              <div class="col-md-6 block1">
+              <h1>Download Organic <br>App</h1>
+              <p>Online Orders made easy, fast and reliable</p>
+              <div class="btns">
+                <img src="images/button 1.png" alt="Download Button 1"><br><br>
+
+                <img src="images/button 2.png" alt="Download Button 2">
+              </div>
+            </div>
+            <div class="col-md-6 block2">
+              <img src="images/mobile.png" style="height:400px " alt="Mobile App Preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="link">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <h1>People are also Looking For</h1>
+          <a href="">Blue Diamond Almonds</a>
+          <a href="">Angie's Boomchickapop Corn</a>
+          <a href="">Salty Krttle Corn</a>
+          <a href="">Chobani Greek YOgurt</a>
+          <a href="">Sweet Vanilla YOgurt</a>
+          <a href="">Blue Diamond Almonds</a>
+          <a href="">Angie's Boomchickapop Corn</a>
+          <a href="">Salty Krttle Corn</a>
+          <a href="">Chobani Greek YOgurt</a>
+          <a href="">Sweet Vanilla YOgurt</a>
+          <a href="">Blue Diamond Almonds></a>
+          <a href="">Chobani Greek YOgurt</a>
+          <a href="">Sweet Vanilla YOgurt</a>
+          <a href="">Blue Diamond Almonds</a>
+          <a href="">Angie's Boomchickapop Corn</a>
+          <a href="">Salty Krttle Corn</a>
+          <a href="">Chobani Greek YOgurt</a>
+          <a href="">Angie's Boomchickapop Corn</a>
+          <a href="">Salty Krttle Corn</a>
+          <a href="">Sweet Vanilla YOgurt</a>
+          <a href=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offer">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="offer-boxes">
+  
+          <div class="offer-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z"/></svg>
+            <h3>Free Delivery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+  
+          <div class="offer-card">
+           <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+            <h3>Secure Payment</h3>
+            <p>Pay safely with multiple payment options.</p>
+          </div>
+  
+          <div class="offer-card">
+           <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM364-182l48-110q-42-15-72.5-46.5T292-412l-110 46q23 64 71 112t111 72Zm-72-366q17-42 47.5-73.5T412-668l-46-110q-64 24-112 72t-72 112l110 46Zm188 188q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm116 178q63-24 110.5-71.5T778-364l-110-48q-15 42-46 72.5T550-292l46 110Zm72-368 110-46q-24-63-71.5-110.5T596-778l-46 112q41 15 71 45.5t47 70.5Z"/></svg>
+            <h3>24/7 Support</h3>
+            <p>We are here to help you anytime, anywhere.</p>
+          </div>
+  
+          <div class="offer-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M480-510ZM160-160v-375l-72 55-48-64 440-336 440 336-48 63-72-54-320-244-240 183v356h200q0 20 3 40t9 40H160ZM680-40H520v-60h57q-26-27-41.5-63T520-240q0-72 45.5-127T680-436v62q-44 13-72 49.5T580-240q0 29 10.5 54t29.5 44v-58h60v160Zm80-4v-62q45-14 72.5-50.5T860-240q0-29-10.5-54T820-338v58h-60v-160h160v60h-57q26 27 41.5 63t15.5 77q0 72-45.5 127T760-44Z"/></svg>
+            <h3>Easy Returns</h3>
+            <p>Return products within 30 days hassle-free.</p>
+          </div>
+  
+          <div class="offer-card">
+           <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#1f1f1f"><path d="M590-300h60v-60h30q17 0 28.5-11.5T720-400v-160q0-17-11.5-28.5T680-600H560q-17 0-28.5 11.5T520-560v160q0 17 11.5 28.5T560-360h30v60Zm-350-60h60v-80h80v80h60v-240h-60v100h-80v-100h-60v240Zm340-60v-120h80v120h-80ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg>
+            <h3>Best Quality</h3>
+            <p>We provide only premium quality products.</p>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="footer-grid">
+          <div class="footer-box">
+            <h1 class="logo"> Organic</h1>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-amazon"></i></a>
+            </div>
+          </div>
+          
+          <!-- Organic -->
+          <div class="footer-box">
+            <h4>Organic</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Our Journals</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Affiliate Programme</a></li>
+              <li><a href="#">Ultras Press</a></li>
+            </ul>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Offers</a></li>
+              <li><a href="#">Discount Coupons</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Info</a></li>
+            </ul>
+          </div>
+          
+          <!-- Customer Service -->
+          <div class="footer-box">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">Cookie Guidelines</a></li>
+              <li><a href="#">Delivery Information</a></li>
+            </ul>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="footer-box">
+            <h4>Subscribe Us</h4>
+            <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+            <form>
+              <input type="email" placeholder="Email Address">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  
+<script>
+
+</script>
+
+  <script src="main.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
