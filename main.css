@@ -340,14 +340,14 @@ body {
  .marquee-container {
     position: sticky;
     top: 0;
-    background: #ff9800; /* Orange background */
+    background: #25451cff; /* Orange background */
     color: white;
     font-weight: bold;
     padding: 20px 0;
     overflow: hidden;
     white-space: nowrap;
     z-index: 9999;
-    font-family: Arial, sans-serif;
+     
   }
 
   .marquee-text {
@@ -355,6 +355,7 @@ body {
     padding-left: 100%;
     animation: marquee 30s linear infinite;
     font-size: 20px;
+    font-family: sans-scale;
   }
 
   @keyframes marquee {
@@ -754,18 +755,16 @@ form button:hover {
     font-size: 14px;
     padding: 0;
   }
-
-  /* Reduce input and button size on mobile */
   .form-group input,
   form button {
-    width: 80%;             /* smaller width */
-    padding: 8px 10px;      /* smaller padding */
-    font-size: 14px;        /* smaller font */
+    width: 80%;  
+    padding: 8px 10px;
+    font-size: 14px; 
     margin-left: 0;
   }
 
   form button {
-    margin-top: 8px;        /* smaller top margin */
+    margin-top: 8px; 
   }
 }
 
